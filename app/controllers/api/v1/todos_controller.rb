@@ -8,7 +8,7 @@ class Api::V1::TodosController < ApplicationController
     @todo =Todo.find(params[:id])
     respond_to do |format|
       format.html
-      format.json { render json: @todo }
+      format.json { render :json => @todo }
     end
   end
 
